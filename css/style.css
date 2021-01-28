@@ -5,16 +5,18 @@
 body{
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
 }
 .nav{
   text-align: center;
-   position: sticky;
+  position: sticky;
   top: 0;
   width: 100%;
   padding-bottom: none;
 }
 .nav ul{
 margin: 0;
+ width: 100%;
 padding:0;
 background-color: #E2F8FA;
 }
@@ -125,4 +127,23 @@ background-color: #E2F8FA;
   padding: 1.5rem;
   margin-top: -15px;
 }
+@media only screen and (max-width: 1000px) {
+  .hangout li{
+    display: none;
+  }
+    .nav li{
+    padding: 1rem;
+    }
+  .nav{
+    width: 100%;
+  }
+}
 
+@media only screen and (max-width: 550px) {
+  .hangout li{
+    display: none;
+  }
+  .nav li{
+    padding: 1rem;
+  }
+}

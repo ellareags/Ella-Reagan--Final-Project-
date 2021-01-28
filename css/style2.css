@@ -5,12 +5,13 @@
 body{
   margin: 0px auto;
   padding: 0;
+  overflow-x: hidden;
 }
 .header-container h1{
   display: flex;
   justify-content: center;
   background-color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
    position: sticky;
   top: 0;
   width: 100%;
@@ -46,6 +47,7 @@ background-color: #E2F8FA;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  font-size: 1rem;
 }
 .menu i{
   display: none;
@@ -59,9 +61,14 @@ background-color: #E2F8FA;
 padding:1rem;  
 align-items: center;
 }
+.about-container img{
+border: 2px black solid;
+}
 .about-container div{
   background-color: #E2F8FA;
   padding: 1rem;
+  border: 2px black solid;
+  width: 83%;
 }
 .about-me{
   display: flex;
@@ -97,29 +104,29 @@ align-items: center;
    padding: .8rem;;
 }
 .main-container{
-  width: 50%;
-  padding: 3rem;
+  width: 60%;
+  padding: 2rem; 
   float: left;
 }
 .main-container img{
-  max-height:800px;
-  width: 600px;
+  max-height: 100%;
+  max-width: 100%;
   padding-top: 0;
 }
 .main-container div{
   text-align: center;
   padding: 0;
+  width: 100%;
 }
 .welcome{
- padding: 2rem;  
+ padding: 3rem;  
  height: auto;
- margin-bottom: 0;
- width: 536px; 
+ margin-bottom: 0; 
 }
 .welcome{
 color: white;
 background-color: lightgray;
-font-size: max(3.3rem);
+font-size: max(3.6rem);
 font-weight: bold;
 border-bottom: 4px solid black;
 border-top: 4px solid black;
@@ -129,10 +136,12 @@ border-top: 4px solid black;
     -1px 1px 0 #000,
      1px 1px 0 #000;
 }
+.blog-entry{
+  width: 100%;
+}
 .entry{
   background-color: #E2F8FA;
   padding: 1rem;
-  width: 565px;
   margin-left: auto;
   margin-right: auto;
   border: solid black 2px;
@@ -140,6 +149,7 @@ border-top: 4px solid black;
 .footer-container {
   display: inline-block;
  width:100%;
+  margin: 0;
 }
 .footer-container li{
   display: inline-block;
@@ -152,6 +162,7 @@ border-top: 4px solid black;
 width: 100%;
 margin: 0;
 padding:0;
+bottom: 0;
 background-color: lightgrey;
 }
 .footer-container a{
@@ -167,23 +178,33 @@ background-color: lightgrey;
   padding: 1.2rem;
   margin-top: -15px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1000px) {
   .aside-container{
     display: none;
   }
   .menu i{
-    display: inline;
-   padding: 0;
+    display: flex;
+    align-self: left;
   }
-  .nav a{
-    display: none;
+  .nav a{ 
+    font-size: .8rem;
+  }
+  .nav li{
+    padding: 1.5rem .5rem;
   }
   .sun i{
     display: none;
   }
+  .welcome{
+    margin-top: 0;
+  }
   .main-container div{
     width: 100%;
     float: none;
+    justify-content: center;
+  }
+  .main-container{
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -192,4 +213,32 @@ background-color: lightgrey;
     float: none;
     align-items: center;
   }
+  .hangout p {
+    display: none;
+  }
+  .hangout li{
+  display: none;
+}
+}
+@media only screen and (max-width: 550px) {
+.main-container{
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-container div{
+  float: none;
+  width: 100%;
+  align-items: center;
+}
+.aside-container{
+  width: 0%;
+}
+  .hangout li{
+  display: none;
+}
+.footer-container li{
+  padding: .8rem;
+  float: none;
+  align-items: center;
+}
 }
