@@ -184,10 +184,13 @@ background-color: lightgrey;
   }
   .menu i{
     display: flex;
-    align-self: left;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 1.4rem;
   }
   .nav a{ 
-    font-size: .8rem;
+    display: none;
   }
   .nav li{
     padding: 1.5rem .5rem;
@@ -201,6 +204,7 @@ background-color: lightgrey;
   .main-container div{
     width: 100%;
     float: none;
+    padding-left: none;
     justify-content: center;
   }
   .main-container{
@@ -218,7 +222,7 @@ background-color: lightgrey;
   }
   .hangout li{
   display: none;
-}
+  }
 }
 @media only screen and (max-width: 550px) {
 .main-container{
